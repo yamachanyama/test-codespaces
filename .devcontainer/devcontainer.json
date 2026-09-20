@@ -1,7 +1,7 @@
 {
   "name": "My Custom Ubuntu",
   // ベースにするOSイメージを指定
-  "image": "://microsoft.com",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
   
   // コンテナ作成（ビルド）時に実行したいコマンドをここに直接書ける！
   "updateContentCommand": "apt-get update && apt-get install -y curl git"
