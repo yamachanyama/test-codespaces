@@ -1,3 +1,4 @@
 # Codespacesを用いて、Dockerを使ってみる。
 
-https://<codespace名>-80.app.github.dev
+ブラウザ上からローカルホストを開きたい場合は、ターミナルから以下を実施
+"$BROWSER" http://localhost
