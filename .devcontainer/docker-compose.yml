@@ -1,9 +1,6 @@
-version: '3.8'
-
 services:
-  # ① WordPress本体
   wordpress:
-    image: wordpress:latest
+    image: wordpress:6.5-apache
     ports:
       - "8080:80"
     restart: always
@@ -15,7 +12,6 @@ services:
     volumes:
       - wordpress_data:/var/www/html
 
-  # ② データベース
   db:
     image: mysql:8.0
     restart: always
