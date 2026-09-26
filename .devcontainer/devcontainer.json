@@ -1,15 +1,15 @@
 {
   "name": "WordPress Dev",
   "dockerComposeFile": "docker-compose.yml",
-  // "service": "wordpress",
-  "workspaceFolder": "/var/www/html",
+  //起動後にwordpressに入るのを止めるようにする "service": "wordpress",
+  //こちらも同様 "workspaceFolder": "/var/www/html",
   "forwardPorts": [8080],
   "shutdownAction": "stopCompose",
 
-  "features": {
+ /*コンテナ内からdockerコマンドを打つ必要ないので止める "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
       "version": "latest",
       "moby": false
     }
-  }
+  } */
 }
